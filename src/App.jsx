@@ -10,7 +10,7 @@ function App() {
   const { monthIndex } = useContext(GlobalContext);
 
   useEffect(() => {
-    setcurrentMonth(monthIndex);
+    setcurrentMonth(getMonth(monthIndex));
   }, [monthIndex]);
 
   return (
