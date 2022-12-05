@@ -26,9 +26,7 @@ const Day = ({ day, rowIdx }) => {
           setDaySelected(day);
           setShowEventModal(true);
         }}
-      >
-        {''}
-      </div>
+      ></div>
     </div>
   );
 };
