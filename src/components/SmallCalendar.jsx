@@ -45,6 +45,15 @@ const SmallCalendar = () => {
             {day.format('dd').charAt(0)}
           </span>
         ))}
+        {currentMonth.map((row, rowIdx) => (
+          <React.Fragment key={rowIdx}>
+            {row.map((day, dayIdx) => (
+              <button key={dayIdx} className={`py-1 w-full `}>
+                <span className="text-sm">{day.format('D')}</span>
+              </button>
+            ))}
+          </React.Fragment>
+        ))}
       </div>
     </div>
   );
